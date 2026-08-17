@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import logo from "@/assets/fenix_blue.webp.asset.json";
+const logoUrl = "/fenix_blue.webp";
 
 const PAYPAL_URL = "https://www.paypal.me/Jose0880712";
 
@@ -144,8 +144,8 @@ function Index() {
       <header className="site-header">
         <div className="container nav-wrap">
           <a href="#" className="brand" aria-label="Fenix Store home">
-            <img src={logo.url} alt="Fenix Store" className="brand-image" />
-          </a>
+  <img src="/fenix_blue.webp" alt="Fenix Store" className="brand-image" />
+</a>
 
           <button
             className="nav-toggle"
@@ -239,11 +239,11 @@ function Index() {
             </div>
 
             <div className="category-grid">
-              {categories.map((cat) => (
-                <article className="category-card" id={cat.id} key={cat.title}>
-                  <div className="card-icon branding-badge">
-                    <img src={logo.url} alt="Fenix Store" />
-                  </div>
+  {categories.map((cat) => (
+    <article className="category-card" id={cat.id} key={cat.title}>
+      <div className="card-icon branding-badge">
+        <img src="/fenix_blue.webp" alt="Fenix Store" />
+      </div>
                   <h3>{cat.title}</h3>
                   <p>{cat.text}</p>
                   <div className="category-meta">
