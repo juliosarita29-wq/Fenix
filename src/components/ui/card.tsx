@@ -53,3 +53,4 @@ const CardFooter = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDiv
 CardFooter.displayName = "CardFooter";
 
 export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent };
+<img src="/fenix_blue.webp" alt="Fenix Store" className="w-12 h-12 object-contain" />
